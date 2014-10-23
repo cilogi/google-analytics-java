@@ -277,7 +277,7 @@ public class GoogleAnalyticsConfig {
 		return this;
 	}
 
-	String getUrl() {
+	public String getUrl() {
 		return useHttps?httpsUrl:httpUrl;
 	}
 

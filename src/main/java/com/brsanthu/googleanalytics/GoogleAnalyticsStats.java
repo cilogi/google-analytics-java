@@ -30,31 +30,31 @@ public class GoogleAnalyticsStats {
 	private AtomicLong timingHits = new AtomicLong();
 	private AtomicLong socialHits = new AtomicLong();
 
-	void pageViewHit() {
+    public void pageViewHit() {
 		pageViewHits.incrementAndGet();
 	}
 
-	void eventHit() {
+    public void eventHit() {
 		eventHits.incrementAndGet();
 	}
 
-	void appViewHit() {
+    public void appViewHit() {
 		appViewHits.incrementAndGet();
 	}
 
-	void itemHit() {
+    public void itemHit() {
 		itemHits.incrementAndGet();
 	}
 
-	void transactionHit() {
+    public void transactionHit() {
 		transactionHits.incrementAndGet();
 	}
 
-	void socialHit() {
+    public void socialHit() {
 		socialHits.incrementAndGet();
 	}
 
-	void timingHit() {
+    public void timingHit() {
 		timingHits.incrementAndGet();
 	}
 

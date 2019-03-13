@@ -66,7 +66,7 @@ import java.util.Map;
 public class GoogleAnalyticsRequest<T> {
 
 	protected Map<GoogleAnalyticsParameter, String> parms = new HashMap<GoogleAnalyticsParameter, String>();
-	protected Map<String, String> customDimentions = new HashMap<String, String>();
+	protected Map<String, String> customDimensions = new HashMap<String, String>();
 	protected Map<String, String> customMetrics = new HashMap<String, String>();
 
 	public GoogleAnalyticsRequest() {
@@ -215,8 +215,8 @@ public class GoogleAnalyticsRequest<T> {
 		return parms;
 	}
 
-	public String customDimention(int index) {
-		return customDimentions.get("cd" + index);
+	public String customDimension(int index) {
+		return customDimensions.get("cd" + index);
 	}
 
 	/**
@@ -251,8 +251,8 @@ public class GoogleAnalyticsRequest<T> {
 	 * 	</div>
 	 * </div>
 	 */
-	public T customDimention(int index, String value) {
-		customDimentions.put("cd" + index, value);
+	public T customDimension(int index, String value) {
+		customDimensions.put("cd" + index, value);
 		return (T) this;
 	}
 
@@ -297,8 +297,8 @@ public class GoogleAnalyticsRequest<T> {
 		return customMetrics.get("cm" + index);
 	}
 
-	public Map<String, String> customDimentions() {
-		return customDimentions;
+	public Map<String, String> customDimensions() {
+		return customDimensions;
 	}
 
 	public Map<String, String> custommMetrics() {
@@ -314,9 +314,9 @@ public class GoogleAnalyticsRequest<T> {
 			builder.append(parms);
 			builder.append(", ");
 		}
-		if (customDimentions != null) {
-			builder.append("customDimentions=");
-			builder.append(customDimentions);
+		if (customDimensions != null) {
+			builder.append("customDimensions=");
+			builder.append(customDimensions);
 			builder.append(", ");
 		}
 		if (customMetrics != null) {

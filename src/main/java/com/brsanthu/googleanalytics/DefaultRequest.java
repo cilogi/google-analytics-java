@@ -54,6 +54,7 @@ import java.util.UUID;
  *
  * @author Santhosh Kumar
  */
+@SuppressWarnings({"unused"})
 public class DefaultRequest extends GoogleAnalyticsRequest<DefaultRequest>{
 
 	private final static String DEFAULT_CLIENT_ID = UUID.randomUUID().toString();
